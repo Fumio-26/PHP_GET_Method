@@ -11,5 +11,5 @@
 
 <?php
           echo "<marquee>", $_GET['text'], "</marquee>"; //Hasil-1
-          echo "Hasil: <strong>", $_GET['text']; //Hasil-2
+          echo "Hasil: <strong>", $_GET['text'], "</strong>"; //Hasil-2
 ?>
