@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GET Method PHP - Fumioo</title>
   </head>
-</html>
+  <?php
+    $action = $_GET['create'];
 
-<?php
-          echo "<marquee>", $_GET['text'], "</marquee>"; //Hasil-1
-          echo "Hasil: <strong>", $_GET['text'], "</strong>"; //Hasil-2
-?>
+    if(isset($action))
+    {
+        echo "<div id='infoMsg'>Successfully created your confess.site</div>";
+        echo "<div id='infoMsg'>Link: https://lynxteam.xyz/user/",$_GET['create'],"</div>";
+    }
+
+    else
+    {
+        echo "<div id='infoMsg'>Please enter your name</div>";
+    }
+    ?>
+</html>
